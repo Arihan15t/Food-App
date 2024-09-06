@@ -3,7 +3,7 @@
 import React, { useContext, useState } from 'react'
 import './FoodItem.css'
 import { assets } from '../../assets/assets'
-import { Storecontext } from '../../context/StoreContext'
+import { Storecontext } from '../../context/Storecontext'
 const FoodItem = ({id,name,price,description,image}) => {
 
 

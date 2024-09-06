@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react'
 import './FoodDisplay.css'
-import { Storecontext } from '../../context/StoreContext'
+import { Storecontext } from '../../context/Storecontext'
 import FoodItem from '../FoodItem/FoodItem'
 const FoodDisplay = (category) => {
 
