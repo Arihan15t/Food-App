@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { createContext ,useState} from "react";
 import { food_list } from "../assets/assets";
 import {Toaster, toast} from  'react-hot-toast';
-export const Storecontext = createContext(null);
+export const Storecontext = createContext(null)
 
 const StorecontextProvider = (props) => {
     
@@ -30,6 +30,11 @@ const StorecontextProvider = (props) => {
           setcartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
         //   toast.success('Successfully removed');
     }
+
+    useEffect(()=>{
+        console.log(cartItems);
+        
+    },[cartItems])
      const getTotalCartAmount=()=>{
         let totalAmount=0;
         for(let item in cartItems){
@@ -57,7 +62,5 @@ const StorecontextProvider = (props) => {
         </Storecontext.Provider>
     )
 }
-
-
 
 export default StorecontextProvider;

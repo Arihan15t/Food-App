@@ -1,10 +1,9 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-import React, { useContext, useState } from 'react'
+
+import React, { useContext} from 'react'
 import './FoodItem.css'
 import { assets } from '../../assets/assets'
 import { Storecontext } from '../../context/Storecontext'
-const FoodItem = ({id,name,price,description,image}) => {
+const FoodItem = ({id,name,description,price,image}) => {
 
 
 
