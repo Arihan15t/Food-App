@@ -31,8 +31,7 @@ const StorecontextProvider = (props) => {
         //   toast.success('Successfully removed');
     }
 
-    useEffect(()=>{
-        console.log(cartItems);
+    
         
     },[cartItems])
      const getTotalCartAmount=()=>{
